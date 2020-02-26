@@ -1,12 +1,61 @@
 <html>
 <head></head>
 <title>NBA Simulation</title>
-<body>
+<body onLoad="genTeams()">
+<h1>Pick Your Team</h1>
 
-<h1>Lakers</h1>
-<h3 id ="team1score">0</h3>
-<h1>Celtics</h1>
-<h3 id ="team2score" >0</h3>
+<div id = "teamTable">
+<table>
+    <tbody>
+    <tr>
+    <td><img onClick="teamPick(this.id)"id="ATL" src = "" alt="ATL"></td>
+    <td><img onClick="teamPick(this.id)"id="BRK" src = "" alt="BKN"></td>
+    <td><img onClick="teamPick(this.id)"id="BOS" src = "" alt="BOS"></td>
+    <td><img onClick="teamPick(this.id)"id="CHO" src = "" alt="CHA"></td>
+    <td><img onClick="teamPick(this.id)"id="CHI" src = "" alt="CHI"></td>
+    <td><img onClick="teamPick(this.id)"id="CLE" src = "" alt="CLE"></td>
+    </tr>
+    <tr>
+    <td><img onClick="teamPick(this.id)"id="DAL" src = "" alt="DAL"></td>
+    <td><img onClick="teamPick(this.id)"id="DEN" src = "" alt="DEN"></td>
+    <td><img onClick="teamPick(this.id)"id="DET" src = "" alt="DET"></td>
+    <td><img onClick="teamPick(this.id)"id="GSW" src = "" alt="GSW"></td>
+    <td><img onClick="teamPick(this.id)"id="HOU" src = "" alt="HOU"></td>
+    <td><img onClick="teamPick(this.id)"id="IND" src = "" alt="IND"></td>
+    </tr>
+    <tr>
+    <td><img onClick="teamPick(this.id)"id="LAC" src = "" alt="LAC"></td>
+    <td><img onClick="teamPick(this.id)"id="LAL" src = "" alt="LAL"></td>
+    <td><img onClick="teamPick(this.id)"id="MEM" src = "" alt="MEM"></td>
+    <td><img onClick="teamPick(this.id)"id="MIA" src = "" alt="MIA"></td>
+    <td><img onClick="teamPick(this.id)"id="MIL" src = "" alt="MIL"></td>
+    <td><img onClick="teamPick(this.id)"id="MIN" src = "" alt="MIN"></td>
+    </tr>
+    <tr>
+    <td><img onClick="teamPick(this.id)"id="NOP" src = "" alt="NOP"></td>
+    <td><img onClick="teamPick(this.id)"id="NYK" src = "" alt="NYK"></td>
+    <td><img onClick="teamPick(this.id)"id="OKC" src = "" alt="OKC"></td>
+    <td><img onClick="teamPick(this.id)"id="ORL" src = "" alt="ORL"></td>
+    <td><img onClick="teamPick(this.id)"id="PHI" src = "" alt="PHI"></td>
+    <td><img onClick="teamPick(this.id)"id="PHO" src = "" alt="PHX"></td>
+    </tr>
+    <tr>
+    <td><img onClick="teamPick(this.id)"id="POR" src = "" alt="POR"></td>
+    <td><img onClick="teamPick(this.id)"id="SAC" src = "" alt="SAC"></td>
+    <td><img onClick="teamPick(this.id)"id="SAS" src = "" alt="SAS"></td>
+    <td><img onClick="teamPick(this.id)"id="TOR" src = "" alt="TOR"></td>
+    <td><img onClick="teamPick(this.id)"id="UTA" src = "" alt="UTA"></td>
+    <td><img onClick="teamPick(this.id)"id="WAS" src = "" alt="WAS"></td>
+    </tr>
+    </tbody>
+    </table>
+</div>
+
+<div>
+    <h1><img id="pickedTeam" alt=""></h1>
+</div>
 </body>
+
+<script src="../scripts/pickTeam.js"></script>
 </html>
-<script src="../scripts/script.js"></script>
+
