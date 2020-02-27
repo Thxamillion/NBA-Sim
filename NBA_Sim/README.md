@@ -1,1 +1,5 @@
 # NBA-Sim
+
+
+npm install -g create-react-app
+npx create-react-app"
