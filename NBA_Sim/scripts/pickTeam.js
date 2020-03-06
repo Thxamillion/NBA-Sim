@@ -16,7 +16,19 @@ function teamPick(team)
     console.log(team)
     document.getElementById("teamTable").remove();
     const usersTeam = team;
+    document.getElementById("pickTeamMes").innerHTML = "You picked " + usersTeam;
+    href()
     document.getElementById("pickedTeam").src = url + usersTeam + "-2020.png";
-    
+    return usersTeam
 
+}
+
+
+
+function href()
+{
+    a = document.createElement('a');
+    a.setAttribute('href', '../webpages/gameSim.html');
+    a.appendChild(document.createTextNode('Continue'));
+    document.body.appendChild(a);
 }
