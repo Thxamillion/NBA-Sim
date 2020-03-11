@@ -1,8 +1,6 @@
-// import {usersTeam} from "pickTeam.js" 
-
 let playerList = ["Francisco Reeves","Ted Reid","Horace Wagner", "Merle Drake" ,"Ruben Mann", "Earnest Hines", "Christopher Little","Larry Santiago", "Seth Newman", "Percy Mendoza"]
-
-    
+// let usersTeam = require('./pickTeam.js');
+let threeCount = 0;  
 
 class playerClass
 {
@@ -44,8 +42,11 @@ function playPossession(team1,team2)
     
         if(Math.random() < 0.85)
         {
-            if(teamOff - teamDef > 40 )
+            if(teamOff - teamDef > 35 )
             {
+                threeCount++
+                console.log("AHHHHHH"+threeCount)
+                console.log(team1)
                 return 3
             }
             else if(teamOff > teamDef)
